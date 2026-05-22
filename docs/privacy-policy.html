@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy - Home Cleaning</title>
+  <title>Privacy Policy - WeWipe</title>
   <style>
     :root {
       --primary: #4F46E5;
@@ -29,6 +29,15 @@
     }
     .header h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; }
     .header p { opacity: 0.85; font-size: 0.95rem; }
+    .header-logo {
+      width: 60px;
+      height: 60px;
+      background: white;
+      border-radius: 14px;
+      padding: 8px;
+      margin: 0 auto 16px;
+      display: block;
+    }
     .container {
       max-width: 780px;
       margin: 0 auto;
@@ -81,52 +90,56 @@
 <body>
 
 <div class="header">
+  <img src="logo.png" alt="WeWipe logo" class="header-logo">
   <h1>Privacy Policy</h1>
-  <p>Home Cleaning App</p>
+  <p>WeWipe</p>
 </div>
 
 <div class="container">
 
-  <p><strong>Effective date:</strong> March 26, 2026</p>
-  <p><strong>Last updated:</strong> March 26, 2026</p>
+  <p><strong>Effective date:</strong> May 22, 2026</p>
+  <p><strong>Last updated:</strong> May 22, 2026</p>
 
-  <p>This Privacy Policy describes how Home Cleaning ("we", "us", or "the App") collects, uses, and protects your personal information when you use our mobile application. The App is provided as a freemium service and is intended for use as-is.</p>
-  <p>By downloading, installing, or using Home Cleaning, you agree to the collection and use of information as described in this policy.</p>
+  <p>This Privacy Policy describes how WeWipe ("the App") collects, uses, and protects your personal information when you use our mobile application.</p>
+  <p>WeWipe is developed and operated by Damien De Lombaert, an independent individual developer (the "Developer", "we", "us", or "our"). The Developer acts as the <strong>data controller</strong> for the personal data described in this policy. The App is provided as a free service and is intended for use as-is.</p>
+  <p>By downloading, installing, or using WeWipe, you agree to the collection and use of information as described in this policy.</p>
 
   <h2>1. Information We Collect</h2>
 
   <div class="card">
     <h3>1.1 Account Information</h3>
-    <p>When you sign in using Google Sign-In or Apple Sign-In, we collect the following information from your account:</p>
+    <p>When you sign in using Google Sign-In or Apple Sign-In, we collect the following information from your authentication provider:</p>
     <ul>
-      <li><strong>Full name</strong> (display name)</li>
+      <li><strong>Display name</strong> (your full name as provided by the provider)</li>
       <li><strong>Email address</strong></li>
-      <li><strong>Profile photo URL</strong></li>
+      <li><strong>Profile photo URL</strong> (when provided by the provider)</li>
     </ul>
     <p>This information is used to identify you within your household and display your profile to other household members.</p>
+    <p>If you sign in with Apple, you may choose Apple's <strong>"Hide My Email"</strong> feature. In that case we receive a private relay email address instead of your real email address, and we use that relay address as your identifier within the App.</p>
   </div>
 
   <div class="card">
-    <h3>1.2 Household & Activity Data</h3>
+    <h3>1.2 Household &amp; Activity Data</h3>
     <p>When you use the App, the following data is created and stored:</p>
     <ul>
-      <li><strong>Household information:</strong> household name, member list, roles (admin/member), household settings, invite codes</li>
+      <li><strong>Household information:</strong> household name, member list, roles (admin/member), household settings, and invite codes</li>
       <li><strong>Tasks:</strong> task names, descriptions, frequency, point values, schedules, and assigned members</li>
       <li><strong>Assignments:</strong> task assignments, due dates, completion status, and completion history</li>
-      <li><strong>Points & Rankings:</strong> earned points, point adjustments, performance statistics</li>
+      <li><strong>Points &amp; rankings:</strong> earned points, point adjustments, and performance statistics</li>
       <li><strong>Bounties:</strong> extra task definitions, completion logs, and reward records</li>
       <li><strong>Memos:</strong> shared notes, checklists, and categories created within your household</li>
-      <li><strong>Vacation periods:</strong> start/end dates for vacation mode</li>
+      <li><strong>Vacation periods:</strong> start/end dates and related scoring baselines for vacation mode</li>
     </ul>
     <p>This data is shared with all members of your household to enable collaborative task management.</p>
   </div>
 
   <div class="card">
-    <h3>1.3 Device & Technical Data</h3>
+    <h3>1.3 Device &amp; Technical Data</h3>
     <ul>
-      <li><strong>Device tokens:</strong> Firebase Cloud Messaging (FCM) tokens are stored to deliver push notifications to your device</li>
-      <li><strong>Crash reports:</strong> anonymous crash and error data is collected via Firebase Crashlytics to help us improve app stability</li>
+      <li><strong>Push notification tokens:</strong> Firebase Cloud Messaging (FCM) tokens are stored to deliver push notifications to your device</li>
+      <li><strong>Crash reports &amp; diagnostics:</strong> we use Firebase Crashlytics to collect crash and error data. This may include your device model, operating system version, app version, app state at the time of a crash, and a unique installation identifier generated by Crashlytics. Some diagnostic log entries may also include your email address so we can trace issues affecting a specific account. This data is used solely to diagnose and fix technical problems</li>
       <li><strong>App preferences:</strong> your language preference, theme mode (light/dark), and consent status are stored locally on your device</li>
+      <li><strong>Home screen widget data:</strong> if you add the optional home screen widget, a snapshot of your current tasks, points, and household ranking is stored locally on your device so the widget can display it. This snapshot stays on your device</li>
     </ul>
   </div>
 
@@ -138,8 +151,9 @@
       <li>Photos, camera, or microphone access</li>
       <li>Financial or payment information</li>
       <li>Health or biometric data</li>
-      <li>Browsing history or cookies</li>
+      <li>Advertising identifiers, browsing history, or cookies</li>
     </ul>
+    <p>We do not use advertising or analytics tracking, and we do not build advertising profiles about you.</p>
   </div>
 
   <h2>2. How We Use Your Information</h2>
@@ -148,78 +162,104 @@
     <li><strong>Authentication:</strong> to verify your identity and allow you to sign in securely</li>
     <li><strong>Household collaboration:</strong> to enable task sharing, assignment tracking, and communication between household members</li>
     <li><strong>Notifications:</strong> to send you task reminders, weekly digests, and household updates</li>
-    <li><strong>App improvement:</strong> to identify and fix bugs using anonymous crash reports</li>
+    <li><strong>App improvement:</strong> to identify and fix bugs using crash reports and diagnostic data</li>
     <li><strong>Gamification:</strong> to calculate and display points, rankings, and performance statistics</li>
+    <li><strong>Security &amp; integrity:</strong> to protect the App and its users against abuse, fraud, and unauthorized access</li>
   </ul>
 
-  <h2>3. Data Storage & Security</h2>
+  <h2>3. Legal Basis for Processing</h2>
+  <p>If you are located in the European Economic Area or the United Kingdom, we process your personal data on the following legal bases under the General Data Protection Regulation (GDPR):</p>
+  <ul>
+    <li><strong>Performance of a contract:</strong> processing your account information, household data, and notifications is necessary to provide the Service you request</li>
+    <li><strong>Consent:</strong> we ask for your consent before collecting data (through the in-app consent screen), and your device asks for your consent before push notifications are enabled. You may withdraw consent at any time (see Section 7)</li>
+    <li><strong>Legitimate interests:</strong> we process crash reports, diagnostic data, and security-related data to keep the App stable, secure, and free of abuse</li>
+    <li><strong>Legal obligation:</strong> we may process data where required to comply with applicable law</li>
+  </ul>
+
+  <h2>4. Data Storage &amp; Security</h2>
   <p>Your data is stored using <strong>Google Firebase</strong> services, specifically:</p>
   <ul>
     <li><strong>Cloud Firestore</strong> for all household, task, and user data</li>
     <li><strong>Firebase Authentication</strong> for secure sign-in management</li>
     <li><strong>Firebase Cloud Messaging</strong> for push notification delivery</li>
-    <li><strong>Firebase Crashlytics</strong> for crash reporting</li>
+    <li><strong>Firebase Crashlytics</strong> for crash reporting and diagnostics</li>
+    <li><strong>Cloud Functions for Firebase</strong> for scheduled tasks such as generating assignments and sending reminder notifications</li>
   </ul>
-  <p>Firebase infrastructure is hosted on Google Cloud servers and is subject to <a href="https://firebase.google.com/support/privacy" target="_blank">Google's data protection practices</a>. We rely on Firebase's built-in security features, including encrypted data transmission (TLS/SSL) and Firestore security rules to restrict data access.</p>
+  <p>Firebase infrastructure is hosted on Google Cloud servers and is subject to <a href="https://firebase.google.com/support/privacy" target="_blank">Google's data protection practices</a>. We rely on Firebase's built-in security features, including encrypted data transmission (TLS/SSL) and Firestore security rules that restrict data access to members of the relevant household.</p>
   <p>While we implement reasonable security measures, no method of electronic storage or transmission is 100% secure, and we cannot guarantee absolute security.</p>
 
-  <h2>4. Data Sharing</h2>
+  <h2>5. Data Sharing</h2>
 
-  <h3>4.1 Within Your Household</h3>
-  <p>Your name, profile photo, tasks, assignments, points, and memos are visible to all members of your household. This is essential for the collaborative nature of the App.</p>
+  <h3>5.1 Within Your Household</h3>
+  <p>Your name, profile photo, tasks, assignments, points, and memos are visible to all members of your household. This is essential for the collaborative nature of the App. Anyone holding a valid household invite code may join the household and gain access to this shared data (see Section 9).</p>
 
-  <h3>4.2 Third-Party Services</h3>
-  <p>We use the following third-party services that may access your data:</p>
+  <h3>5.2 Third-Party Services</h3>
+  <p>We use the following third-party services that may process your data:</p>
   <ul>
-    <li><a href="https://policies.google.com/privacy" target="_blank">Google Play Services</a> &mdash; authentication and app distribution</li>
-    <li><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase (Google)</a> &mdash; database, authentication, notifications, and crash reporting</li>
-    <li><a href="https://support.apple.com/en-us/HT208092" target="_blank">Apple Sign-In</a> &mdash; authentication on iOS devices</li>
+    <li><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase / Google Cloud (Google)</a> &mdash; database, authentication, notifications, crash reporting, and scheduled functions</li>
+    <li><a href="https://policies.google.com/privacy" target="_blank">Google Sign-In</a> &mdash; authentication</li>
+    <li><a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Sign-In</a> &mdash; authentication on iOS devices</li>
   </ul>
-  <p>We do <strong>not</strong> sell, trade, or share your personal information with advertisers or data brokers.</p>
+  <p>We do <strong>not</strong> sell, rent, trade, or share your personal information with advertisers or data brokers.</p>
 
-  <h3>4.3 Legal Requirements</h3>
-  <p>We may disclose your information if required by law, legal process, or government request, or to protect the rights, safety, or property of our users.</p>
+  <h3>5.3 Legal Requirements</h3>
+  <p>We may disclose your information if required by law, legal process, or a valid government request, or where necessary to protect the rights, safety, or property of our users or the Developer.</p>
 
-  <h2>5. Data Retention</h2>
+  <h2>6. Data Retention</h2>
   <p>Your data is retained for as long as your account is active and you remain a member of a household. Specifically:</p>
   <ul>
-    <li><strong>Account data:</strong> retained until you delete your account</li>
+    <li><strong>Account &amp; profile data:</strong> retained until you delete your account</li>
     <li><strong>Household data:</strong> retained as long as the household exists and has active members</li>
-    <li><strong>Crash reports:</strong> retained for up to 90 days, then automatically deleted or aggregated</li>
-    <li><strong>Device tokens:</strong> updated on each app launch and removed upon account deletion</li>
+    <li><strong>Crash reports &amp; diagnostics:</strong> retained according to Firebase Crashlytics' default retention period (up to 90 days), then automatically removed or aggregated</li>
+    <li><strong>Push notification tokens:</strong> updated as your device refreshes them and removed when you sign out or delete your account</li>
   </ul>
 
-  <h2>6. Your Rights & Controls</h2>
-  <p>You have the following rights regarding your personal data:</p>
+  <h2>7. Your Rights &amp; Controls</h2>
+  <p>You have the following rights regarding your personal data. If you are in the European Economic Area or the United Kingdom, these rights are granted to you under the GDPR:</p>
   <ul>
     <li><strong>Access:</strong> you can view your profile information and all household data directly within the App</li>
-    <li><strong>Correction:</strong> you can update your display name and profile photo through your Google or Apple account</li>
-    <li><strong>Deletion:</strong> you can delete your account at any time from <strong>Settings &gt; Account &gt; Delete Account</strong>. This will remove your authentication data and associated profile from the App</li>
-    <li><strong>Notifications:</strong> you can disable push notifications at any time through your device's system settings or the App settings</li>
-    <li><strong>Withdraw consent:</strong> you can stop all data collection by uninstalling the App</li>
+    <li><strong>Rectification:</strong> you can update your display name and profile photo through your Google or Apple account, and edit household content within the App</li>
+    <li><strong>Erasure:</strong> you can delete your account at any time from <strong>Settings &gt; Account &gt; Delete Account</strong> (see Section 8 for what deletion involves)</li>
+    <li><strong>Restriction &amp; objection:</strong> you may ask us to restrict or stop certain processing of your data by contacting us</li>
+    <li><strong>Data portability:</strong> you may request a copy of the personal data you provided to us in a structured, commonly used format by contacting us</li>
+    <li><strong>Notifications:</strong> you can disable push notifications at any time through your device's system settings or the App's settings screen</li>
+    <li><strong>Withdraw consent:</strong> you can withdraw consent for data collection by deleting your account and uninstalling the App; this does not affect the lawfulness of processing carried out before withdrawal</li>
+    <li><strong>Lodge a complaint:</strong> you have the right to lodge a complaint with your local data protection authority. In France, this is the <a href="https://www.cnil.fr" target="_blank">Commission Nationale de l'Informatique et des Libertés (CNIL)</a></li>
   </ul>
+  <p>To exercise any of these rights, contact us using the details in Section 13.</p>
 
-  <h2>7. Children's Privacy</h2>
-  <p>Home Cleaning is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13 years of age. If we discover that a child under 13 has provided us with personal information, we will promptly delete it. If you are a parent or guardian and believe your child has provided us with personal data, please contact us.</p>
+  <h2>8. Account Deletion &amp; Its Effects</h2>
+  <p>When you delete your account from <strong>Settings &gt; Account &gt; Delete Account</strong>:</p>
+  <ul>
+    <li>Your Firebase Authentication account is permanently deleted</li>
+    <li>Your roommate profile (name, photo, points, push tokens) is removed from each household you belonged to</li>
+    <li>Content you created that other household members rely on &mdash; such as completed task assignments and memos &mdash; is <strong>anonymized</strong> rather than erased: your identity is replaced with "Deleted User" so the household's shared history and statistics remain consistent for the remaining members</li>
+  </ul>
+  <p>Because households are shared spaces, data that belongs to the household as a whole (such as the task list and the household's activity history) is not removed when a single member leaves. If you want all of a household's data removed, every member must delete their account or the household must be emptied.</p>
 
-  <h2>8. Anonymous Features</h2>
-  <p>The App includes a feature allowing users to post memos anonymously within their household. When a memo is posted anonymously, the creator's identity is replaced with "Anonymous" and is not disclosed to other household members.</p>
+  <h2>9. Household Invite Codes</h2>
+  <p>Households are joined using invite codes that are valid for 7 days. Anyone who obtains a valid invite code can join the corresponding household and gain access to its shared data. You are responsible for sharing invite codes only with people you trust.</p>
 
-  <h2>9. Offline Data</h2>
-  <p>The App supports offline functionality. Data may be cached locally on your device to enable use without an internet connection. This cached data is synchronized with our servers when connectivity is restored. Locally cached data is subject to your device's own security measures.</p>
+  <h2>10. Anonymous Memos</h2>
+  <p>The App includes a feature allowing users to post memos anonymously within their household. When a memo is posted anonymously, the creator's identity is replaced with "Anonymous" and is not displayed to other household members within the App.</p>
 
-  <h2>10. International Data Transfers</h2>
-  <p>Your data is processed and stored on Google Cloud infrastructure, which may involve transfer to servers located outside your country of residence. By using the App, you consent to such transfers. Google Cloud complies with applicable data protection frameworks.</p>
+  <h2>11. Children's Privacy</h2>
+  <p>WeWipe is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13 years of age. Some jurisdictions, including certain EU countries, set a higher minimum age for digital consent. If we discover that a child below the applicable age has provided us with personal information, we will promptly delete it. If you are a parent or guardian and believe your child has provided us with personal data, please contact us.</p>
 
-  <h2>11. Changes to This Privacy Policy</h2>
+  <h2>12. Offline Data &amp; International Transfers</h2>
+  <p>The App supports offline functionality. Data may be cached locally on your device to enable use without an internet connection, and is synchronized with our servers when connectivity is restored. Locally cached data is subject to your device's own security measures.</p>
+  <p>Your data is processed and stored on Google Cloud infrastructure, which may involve transfer to and storage on servers located outside your country of residence, including outside the European Economic Area. Google Cloud relies on recognized safeguards (such as Standard Contractual Clauses) for such transfers. By using the App, you acknowledge this processing.</p>
+
+  <h2>13. Changes to This Privacy Policy</h2>
   <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last updated" date. We encourage you to review this policy periodically. Your continued use of the App after changes are posted constitutes your acceptance of the updated policy.</p>
 
-  <h2>12. Contact Us</h2>
-  <p>If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:</p>
-  <p><strong>Email:</strong> <a href="mailto:homecleaningapp.contact@gmail.com">homecleaningapp.contact@gmail.com</a></p>
+  <h2>14. Contact Us</h2>
+  <p>If you have any questions or concerns about this Privacy Policy or our data practices, or if you wish to exercise your rights, please contact the data controller at:</p>
+  <p><strong>Data controller:</strong> Damien De Lombaert (independent individual developer)</p>
+  <p><strong>Email:</strong> <a href="mailto:home.cleaning.app@gmail.com">home.cleaning.app@gmail.com</a></p>
 
   <div class="footer">
-    <p>&copy; 2026 Home Cleaning App. All rights reserved.</p>
+    <p>&copy; 2026 WeWipe. All rights reserved.</p>
     <a href="terms-of-service.html" class="back-link">View Terms of Service</a>
   </div>
 
